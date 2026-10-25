@@ -1,0 +1,21 @@
+{
+  "id": "trig_0155ZaNtaXLUKJvYgY3FRnwt",
+  "name": "Biweekly Product Trend Scout",
+  "cron_expression": "0 10,11 * * 1",
+  "enabled": true,
+  "model": "claude-sonnet-4-6",
+  "allowed_tools": [
+    "Bash",
+    "Read",
+    "Write",
+    "WebSearch",
+    "WebFetch"
+  ],
+  "sources": [
+    "https://github.com/Bioyangvoll/markettracker"
+  ],
+  "mcp_connections": [
+    "Gmail"
+  ],
+  "url": "https://claude.ai/code/routines/trig_0155ZaNtaXLUKJvYgY3FRnwt"
+}
