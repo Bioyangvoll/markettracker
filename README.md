@@ -11,3 +11,8 @@ Biweekly product trend memory store for Claude Code agent
 
 ## Files
 - `memory/findings.md` — findings per run (last 12 runs kept), used to avoid repeats
+
+## Auto-sync
+Local clone: `~/projects/markettracker`. A Claude Code hook (`~/.claude/hooks/markettracker_sync.py`) keeps it in sync:
+- after the routine is read/updated via Claude Code, its prompt and config are written to `routine/prompt.md` and `routine/config.json`
+- at the end of every Claude Code turn, any change in the repo is committed, rebased onto origin, and pushed
